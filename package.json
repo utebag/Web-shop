@@ -1,0 +1,33 @@
+{
+  "name": "assingment2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "build": "rm -rf build/ && prettier --write source/ && tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/express": "^4.17.13",
+    "@types/morgan": "^1.9.3",
+    "axios": "^0.26.1",
+    "bcrypt": "^5.0.1",
+    "ejs": "^3.0.2",
+    "express": "^4.17.3",
+    "git": "^0.1.5",
+    "mongoose": "^6.3.2",
+    "mongoose-encryption": "^2.1.2",
+    "morgan": "^1.10.0",
+    "passport": "^0.5.2",
+    "path": "^0.12.7",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

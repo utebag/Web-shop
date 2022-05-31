@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/style.css">
+    <title>  </title>
+</head>
+
+<body>
+
+
+<div class="blogs content">
+    <h2>All Blogs</h2>
+
+    <% if (users.length > 0) { %>
+        <% users.forEach(user => { %>
+            <a class="single" href="/user/<%= user._id %>">
+
+                <p class="snippet"><%= user.email %></p>
+                <p class="snippet"><%= user.password%></p>
+                <h3>------------------------------------</h3>
+            </a>
+        <% }) %>
+    <% } else { %>
+        <p>There are no users to display...</p>
+    <% } %>
+
+</div>
+
+<a href="/register"> Add new user </a>
+
+</body>
+</html>
